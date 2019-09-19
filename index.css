@@ -35,3 +35,120 @@ main {
 	width: 20%;
 	border-radius: 0.25rem;
 }
+
+.item-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 0.5rem;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"name name item-name item-name"
+		"qualities qualities item-qualities item-qualities"
+		"rasa rasa item-rasa item-rasa"
+		"virya virya item-virya item-virya"
+		"vipaka vipaka item-vipaka item-vipaka"
+		"increase increase item-increase item-increase"
+		"decrease decrease item-decrease item-decrease"
+	;
+	border: solid 1px;
+	padding: 1rem;
+}
+
+
+.name {
+	grid-area: name;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-name {
+	grid-area: item-name;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.qualities {
+	grid-area: qualities;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-qualities {
+	grid-area: item-qualities;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rasa {
+	grid-area: rasa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-rasa {
+	grid-area: item-rasa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.virya {
+	grid-area: virya;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-virya {
+	grid-area: item-virya;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.vipaka {
+	grid-area: vipaka;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-vipaka {
+	grid-area: item-vipaka;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.increase {
+	grid-area: increase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-increase {
+	grid-area: item-increase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.decrease {
+	grid-area: decrease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-decrease {
+	grid-area: item-decrease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
