@@ -1,0 +1,21 @@
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "search-container" "display-container";
+	padding: 10 rem;
+}
+
+.search-container {
+	grid-area: search-container;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.display-container {
+	grid-area: display-container;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
