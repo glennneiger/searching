@@ -1,4 +1,4 @@
-const ingredients = [
+let ingredients = [
 	{
 		id: 01,
 		name: 'Apple',
@@ -340,7 +340,6 @@ const ingredients = [
 		type: 'oils'
 	}
 
-]
-
+];
 
 

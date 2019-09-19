@@ -1,9 +1,9 @@
 main {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 4rem auto;
 	grid-template-areas: "search-container" "display-container";
-	padding: 10 rem;
+
 }
 
 .search-container {
@@ -18,4 +18,20 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.search-bar {
+	height: 3rem;
+	width: 50%;
+	border-radius: 0.25rem;
+}
+
+.search-bar::placeholder {
+	font-size: larger;
+}
+
+.search-button {
+	height: 3rem;
+	width: 20%;
+	border-radius: 0.25rem;
 }
