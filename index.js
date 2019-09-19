@@ -449,7 +449,7 @@ const search = () => {
 		if (item.name.toLowerCase().includes(`${searchedItem}`)) {
 			itemsList.push(item);
 		} else {
-			console.log('nothing found :( ')
+			displayContainer.innerHTML = 'No results found :('
 		}
 	})
 

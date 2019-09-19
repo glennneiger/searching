@@ -3,7 +3,6 @@ main {
 	grid-template-columns: 1fr;
 	grid-template-rows: 4rem auto;
 	grid-template-areas: "search-container" "display-container";
-
 }
 
 .search-container {
@@ -15,9 +14,8 @@ main {
 
 .display-container {
 	grid-area: display-container;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: block;
+	padding: 4rem;
 }
 
 .search-bar {
@@ -52,6 +50,7 @@ main {
 	;
 	border: solid 1px;
 	padding: 1rem;
+	margin: 2rem;
 }
 
 
@@ -60,12 +59,13 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: bold;
 }
 
 .item-name {
 	grid-area: item-name;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -74,12 +74,13 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: bold;
 }
 
 .item-qualities {
 	grid-area: item-qualities;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -88,12 +89,13 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: bold;
 }
 
 .item-rasa {
 	grid-area: item-rasa;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -102,12 +104,13 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: bold;
 }
 
 .item-virya {
 	grid-area: item-virya;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -116,12 +119,13 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: bold;
 }
 
 .item-vipaka {
 	grid-area: item-vipaka;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -130,12 +134,13 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: bold;
 }
 
 .item-increase {
 	grid-area: item-increase;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -144,11 +149,13 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: bold;
 }
 
 .item-decrease {
 	grid-area: item-decrease;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+
 }
