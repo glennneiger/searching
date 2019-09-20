@@ -1,6 +1,6 @@
 let ingredients = [
 	{
-		id: 01,
+		id: 1,
 		name: 'Apple',
 		qualities: 'Light, Rough',
 		rasa: 'Sweet, Astringent',
@@ -11,7 +11,7 @@ let ingredients = [
 		guna: 'Rajasic',
 		type: 'fruits'
 	}, {
-		id: 02,
+		id: 2,
 		name: 'Banana',
 		qualities: 'Smooth, Heavy, Laxative',
 		rasa: 'Sweet, Astringent',
@@ -23,7 +23,7 @@ let ingredients = [
 		type: 'fruits'
 	},
 	{
-		id: 03,
+		id: 3,
 		name: 'Coconut',
 		qualities: 'Oily, Smooth',
 		rasa: 'Sweet',
@@ -35,7 +35,7 @@ let ingredients = [
 		type: 'fruits'
 	},
 	{
-		id: 04,
+		id: 4,
 		name: 'Date',
 		qualities: 'Oily',
 		rasa: 'Sweet',
@@ -47,7 +47,7 @@ let ingredients = [
 		type: 'fruits'
 	},
 	{
-		id: 05,
+		id: 5,
 		name: 'Fig',
 		qualities: 'Heavy, Nourishing',
 		rasa: 'Sweet',
@@ -59,7 +59,7 @@ let ingredients = [
 		type: 'fruits'
 	},
 	{
-		id: 06,
+		id: 6,
 		name: 'Beet',
 		qualities: 'Heavy, Smooth',
 		rasa: 'Sweet',
@@ -71,7 +71,7 @@ let ingredients = [
 		type: 'vegetables'
 	},
 	{
-		id: 07,
+		id: 7,
 		name: 'Broccoli',
 		qualities: 'Rough, Dry',
 		rasa: 'Sweet',
@@ -83,7 +83,7 @@ let ingredients = [
 		type: 'vegetables'
 	},
 	{
-		id: 08,
+		id: 8,
 		name: 'Cauliflower',
 		qualities: 'Rough, Dry',
 		rasa: 'Astringent',
@@ -95,7 +95,7 @@ let ingredients = [
 		type: 'vegetables'
 	},
 	{
-		id: 09,
+		id: 9,
 		name: 'Carrot',
 		qualities: 'Heavy',
 		rasa: 'Sweet, Bitter, Astringent',
@@ -373,4 +373,5 @@ let ingredients = [
 
 ];
 
+ export { ingredients as ingredients };
 
