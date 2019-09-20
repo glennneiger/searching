@@ -141,26 +141,36 @@ const search = () => {
 	printItems(itemsList);
 }
 
-const searchById = () => {
+const searchById = function() {
 
 	itemsList = [];
 
 	let searchedItem = parseInt(searchByIdInput.value);
 
-	ingredients.forEach( item => {
+	let i = 0;
 
-		if (item.id === searchedItem) {
-			itemsList.push(item);
+	while (i <= ingredients.length) {
+
+		console.log(ingredients[i]);
+
+		if (searchedItem === ingredients[i].id) {
+
+			console.log(searchedItem);
+			itemsList.push(searchedItem);
+
 		}
 
-		showTotal(itemsList);
-		printItems(itemsList);
+		i++;
+	}
 
-	})
+	showTotal(itemsList);
+	printItems(itemsList);
 
+	return itemsList;
 }
 
+const searchId = searchById.bind(ingredients);
 
 searchButton.addEventListener('click', search);
-searchByIdButton.addEventListener('click', searchById);
+searchByIdButton.addEventListener('click', searchId);
 
