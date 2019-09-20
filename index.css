@@ -38,7 +38,7 @@ main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	column-gap: 0.5rem;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas:
 		"name name item-name item-name"
 		"qualities qualities item-qualities item-qualities"
@@ -47,6 +47,8 @@ main {
 		"vipaka vipaka item-vipaka item-vipaka"
 		"increase increase item-increase item-increase"
 		"decrease decrease item-decrease item-decrease"
+		"guna guna item-guna item-guna"
+
 	;
 	border: solid 1px;
 	padding: 1rem;
@@ -154,6 +156,22 @@ main {
 
 .item-decrease {
 	grid-area: item-decrease;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+.guna {
+	grid-area: guna;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+
+.item-guna {
+	grid-area: item-guna;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;

@@ -8,6 +8,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Vata',
 		decrease: 'Pitta',
+		guna: 'Rajasic',
 		type: 'fruits'
 	}, {
 		id: 02,
@@ -18,6 +19,7 @@ let ingredients = [
 		vipaka: 'Sour',
 		increase: 'Pitta and Kapha',
 		decrease: 'Vata',
+		guna: 'Rajasic',
 		type: 'fruits'
 	},
 	{
@@ -29,6 +31,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha',
 		decrease: 'Vata and Pitta',
+		guna: 'Sattvic',
 		type: 'fruits'
 	},
 	{
@@ -40,6 +43,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'none',
 		decrease: 'Pitta',
+		guna: 'Sattvic',
 		type: 'fruits'
 	},
 	{
@@ -51,6 +55,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha',
 		decrease: 'Vata and Pitta',
+		guna: 'Sattvic',
 		type: 'fruits'
 	},
 	{
@@ -62,6 +67,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha and Pitta',
 		decrease: 'Vata',
+		guna: 'Sattvic',
 		type: 'vegetables'
 	},
 	{
@@ -73,6 +79,7 @@ let ingredients = [
 		vipaka: 'Pungent',
 		increase: 'Vata',
 		decrease: 'Kapha and Pitta',
+		guna: 'Rajasic',
 		type: 'vegetables'
 	},
 	{
@@ -84,6 +91,7 @@ let ingredients = [
 		vipaka: 'Pungent',
 		increase: 'Vata',
 		decrease: 'Kapha and Pitta',
+		guna: 'Sattvic',
 		type: 'vegetables'
 	},
 	{
@@ -95,6 +103,7 @@ let ingredients = [
 		vipaka: 'Pungent',
 		increase: 'Pitta',
 		decrease: 'Kapha and Vata',
+		guna: 'Sattvic',
 		type: 'vegetables'
 	},
 	{
@@ -106,7 +115,8 @@ let ingredients = [
 		vipaka: 'Pungent',
 		increase: 'Vata',
 		decrease: 'Kapha and Pitta',
-		type: 'vegetabless'
+		guna: 'Sattvic',
+		type: 'vegetables'
 	},
 	{
 		id: 11,
@@ -117,6 +127,7 @@ let ingredients = [
 		vipaka: 'Pungent',
 		increase: 'Kapha in excess',
 		decrease: 'Vata and Pitta',
+		guna: 'Sattvic',
 		type: 'grains'
 	},
 	{
@@ -128,6 +139,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Pitta and Vata',
 		decrease: 'Kapha',
+		guna: 'Rajasic',
 		type: 'grains'
 	},
 	{
@@ -139,6 +151,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha',
 		decrease: 'Vata and Pitta',
+		guna: 'Tamasic',
 		type: 'grains'
 	},
 	{
@@ -150,6 +163,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha in excess',
 		decrease: 'Vata and Pitta',
+		guna: 'Sattvic',
 		type: 'grains'
 	},
 	{
@@ -161,6 +175,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Vata and Pitta',
 		decrease: 'Kapha',
+		guna: 'Sattvic',
 		type: 'grains'
 	},
 	{
@@ -172,6 +187,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Vaya',
 		decrease: 'Kapha and Pitta',
+		guna: 'Sattvic',
 		type: 'grains'
 	},
 	{
@@ -183,6 +199,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha and Pitta',
 		decrease: 'Vata',
+		guna: 'Sattvic',
 		type: 'nuts'
 	},
 	{
@@ -194,6 +211,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha and Pitta',
 		decrease: 'Vata',
+		guna: 'Rajasic',
 		type: 'nuts'
 	},
 	{
@@ -205,6 +223,7 @@ let ingredients = [
 		vipaka: 'Pungent',
 		increase: 'Vata and Pitta',
 		decrease: 'Kapha',
+		guna: 'Sattvic',
 		type: 'nuts'
 	},
 	{
@@ -216,6 +235,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha and Pitta',
 		decrease: 'Vata',
+		guna: 'Sattvic',
 		type: 'nuts'
 	},
 	{
@@ -227,6 +247,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha and Pitta',
 		decrease: 'Vata',
+		guna: 'Sattvic',
 		type: 'nuts'
 	},
 	{
@@ -238,6 +259,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Vata and Kapha',
 		decrease: 'Pitta',
+		guna: 'Sattvic',
 		type: 'legumes'
 	},
 	{
@@ -249,6 +271,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha',
 		decrease: 'Vata and Pitta',
+		guna: 'Sattvic',
 		type: 'legumes'
 	},
 	{
@@ -260,6 +283,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha and Vata',
 		decrease: 'Pitta',
+		guna: 'Rajasic',
 		type: 'legumes'
 	},
 	{
@@ -271,6 +295,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Vata',
 		decrease: 'Kapha and Pitta',
+		guna: 'Rajasic',
 		type: 'legumes'
 	},
 	{
@@ -282,6 +307,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Vata',
 		decrease: 'Kapha and Pitta',
+		guna: 'Rajasic',
 		type: 'legumes'
 	},
 	{
@@ -293,6 +319,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Tridoshic',
 		decrease: 'Tridoshic',
+		guna: 'Sattvic',
 		type: 'oils'
 	},
 	{
@@ -304,6 +331,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Kapha',
 		decrease: 'Tridoshic',
+		guna: 'Sattvic',
 		type: 'oils'
 	},
 	{
@@ -315,6 +343,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Tridoshic',
 		decrease: 'Tridoshic',
+		guna: 'Sattvic',
 		type: 'oils'
 	},
 	{
@@ -326,6 +355,7 @@ let ingredients = [
 		vipaka: 'Sweet',
 		increase: 'Pitta',
 		decrease: 'Vata',
+		guna: 'Sattvic',
 		type: 'oils'
 	},
 	{
@@ -337,6 +367,7 @@ let ingredients = [
 		vipaka: 'Pungent',
 		increase: 'Pitta',
 		decrease: 'Kapha and Vata',
+		guna: 'unknown',
 		type: 'oils'
 	}
 
