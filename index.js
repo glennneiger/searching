@@ -119,10 +119,10 @@ const search = () => {
 		if (item.name.toLowerCase().includes(`${searchedItem}`)) {
 			itemsList.push(item);
 		} else {
+			console.log('No results found :(')
 			displayContainer.innerHTML = 'No results found :('
 		}
 	})
-
 
 	printItems(itemsList);
 

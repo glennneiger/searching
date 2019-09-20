@@ -10,6 +10,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 }
 
 .display-container {
@@ -22,6 +23,7 @@ main {
 	height: 3rem;
 	width: 50%;
 	border-radius: 0.25rem;
+	margin: 3rem;
 }
 
 .search-bar::placeholder {

@@ -185,7 +185,7 @@ let ingredients = [
 		rasa: 'Sweet, Astringent',
 		virya: 'Cooling',
 		vipaka: 'Sweet',
-		increase: 'Vaya',
+		increase: 'Vata',
 		decrease: 'Kapha and Pitta',
 		guna: 'Sattvic',
 		type: 'grains'
