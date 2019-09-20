@@ -1,8 +1,11 @@
 main {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 4rem auto;
-	grid-template-areas: "search-container" "display-container";
+	grid-template-rows: 4rem auto auto;
+	grid-template-areas:
+		"search-container"
+		"total-results-container"
+		"display-container";
 }
 
 .search-container {
@@ -10,13 +13,20 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
 
+.total-results {
+	grid-area: total-results-container;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
 }
 
 .display-container {
 	grid-area: display-container;
 	display: block;
-	padding: 4rem;
+	padding: 2rem;
 }
 
 .search-bar {
@@ -53,6 +63,7 @@ main {
 
 	;
 	border: solid 1px;
+	border-radius: 0.25rem;
 	padding: 1rem;
 	margin: 2rem;
 }

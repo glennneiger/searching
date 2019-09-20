@@ -5,8 +5,20 @@ import {ingredients as ingredients} from './data.js';
 const searchInput =  document.querySelector(".search-bar");
 const searchButton =  document.querySelector(".search-button");
 const displayContainer =  document.querySelector(".display-container");
+const displayTotalResults = document.querySelector(".total-results");
 
 let itemsList = [];
+
+const showTotal = list => {
+	console.log(list.length);
+	if (list.length === 0 ) {
+        displayTotalResults.innerHTML = ` 0 RESULTADOS `;
+    } else if (list.length === 1 ) {
+        displayTotalResults.innerHTML = `${list.length} RESULTADO`;
+    } else {
+        displayTotalResults.innerHTML = `${list.length} RESULTADOS`;
+    }
+}
 
 const printItems = list => {
 
@@ -124,6 +136,7 @@ const search = () => {
 		}
 	})
 
+	showTotal(itemsList);
 	printItems(itemsList);
 
 	return itemsList;
