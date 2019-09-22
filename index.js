@@ -149,14 +149,12 @@ const searchById = function() {
 
 	let i = 0;
 
-	while (i <= ingredients.length) {
-
-		console.log(ingredients[i]);
+	while (i < ingredients.length) {
 
 		if (searchedItem === ingredients[i].id) {
 
-			console.log(searchedItem);
-			itemsList.push(searchedItem);
+
+			itemsList.push(ingredients[i]);
 
 		}
 
