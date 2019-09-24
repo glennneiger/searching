@@ -147,20 +147,27 @@ const searchById = function() {
 
 	let searchedItem = parseInt(searchByIdInput.value);
 
-	let i = -1;
+	if (searchedItem <= 30) {
 
-	do {
+		let i = -1;
 
-		i++;
+		do {
 
-		if (searchedItem === ingredients[i].id) {
-			itemsList.push(ingredients[i]);
-		}
+			i++;
 
-	} while (searchedItem !== ingredients[i].id);
+			if (searchedItem === ingredients[i].id) {
+				itemsList.push(ingredients[i]);
+			}
 
-	showTotal(itemsList);
-	printItems(itemsList);
+		} while (searchedItem !== ingredients[i].id);
+
+		showTotal(itemsList);
+		printItems(itemsList);
+
+	} else {
+		displayContainer.innerHTML = '';
+		displayTotalResults.innerHTML = 'Try instead a number between 1 and 30';
+	}
 
 	return itemsList;
 }
