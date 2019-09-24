@@ -149,17 +149,20 @@ const searchById = function() {
 
 	if (searchedItem <= 30) {
 
-		let i = -1;
+		let isFound = true;
 
-		do {
+		let i = 0;
+
+		while (isFound) {
 
 			i++;
 
 			if (searchedItem === ingredients[i].id) {
 				itemsList.push(ingredients[i]);
+				isFound = false;
 			}
 
-		} while (searchedItem !== ingredients[i].id);
+		}
 
 		showTotal(itemsList);
 		printItems(itemsList);
