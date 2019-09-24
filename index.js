@@ -147,19 +147,7 @@ const searchById = function() {
 
 	let searchedItem = parseInt(searchByIdInput.value);
 
-	let i = 0;
-
-	while (i < ingredients.length) {
-
-		if (searchedItem === ingredients[i].id) {
-
-
-			itemsList.push(ingredients[i]);
-
-		}
-
-		i++;
-	}
+	let result  = ingredients.find(item => item.id === searchedItem ? itemsList.push(item) : null);
 
 	showTotal(itemsList);
 	printItems(itemsList);
@@ -171,4 +159,3 @@ const searchId = searchById.bind(ingredients);
 
 searchButton.addEventListener('click', search);
 searchByIdButton.addEventListener('click', searchId);
-
