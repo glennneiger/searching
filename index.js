@@ -147,7 +147,7 @@ const searchById = function() {
 
 	let searchedItem = parseInt(searchByIdInput.value);
 
-	let result  = ingredients.find(item => item.id === searchedItem ? itemsList.push(item) : null);
+	itemsList  = ingredients.find(item => item.id === searchedItem ? item : null);
 
 	showTotal(itemsList);
 	printItems(itemsList);
