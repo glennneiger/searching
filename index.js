@@ -147,7 +147,19 @@ const searchById = function() {
 
 	let searchedItem = parseInt(searchByIdInput.value);
 
-	itemsList  = ingredients.find(item => item.id === searchedItem ? item : null);
+	let i = 0;
+
+	do {
+
+		i++;
+
+		if (searchedItem === ingredients[i].id) {
+			itemsList.push(ingredients[i]);
+		}
+
+
+	} while (searchedItem !== ingredients[i].id);
+
 
 	showTotal(itemsList);
 	printItems(itemsList);
