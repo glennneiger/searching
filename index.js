@@ -11,7 +11,18 @@ const searchByIdButton =  document.querySelector(".search-button-id");
 const displayContainer =  document.querySelector(".display-container");
 const displayTotalResults = document.querySelector(".total-results");
 
+const condition = document.querySelector("select");
+
 let itemsList = [];
+
+const searchByType = () => {
+	let itemsList = [];
+
+	itemsList = ingredients.filter(item => item.type === condition.value);
+
+	showTotal(itemsList);
+	printItems(itemsList);
+}
 
 const showTotal = list => {
 
@@ -147,11 +158,9 @@ const searchById = function() {
 
 	let searchedItem = parseInt(searchByIdInput.value);
 
-	if (searchedItem <= 30) {
-
 		let isFound = false;
 
-		let i = 0;
+		let i = -1;
 
 		while (!isFound) {
 
@@ -167,15 +176,13 @@ const searchById = function() {
 		showTotal(itemsList);
 		printItems(itemsList);
 
-	} else {
-		displayContainer.innerHTML = '';
-		displayTotalResults.innerHTML = 'Try instead a number between 1 and 30';
-	}
-
 	return itemsList;
 }
 
 const searchId = searchById.bind(ingredients);
+const searchType = searchByType.bind(ingredients);
+
 
 searchButton.addEventListener('click', search);
 searchByIdButton.addEventListener('click', searchId);
+condition.addEventListener('change', searchType);

@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+	margin: 0;
+	padding: 2rem;
+	font-family: 'Roboto', sans-serif;
+}
+
 main {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 4rem auto auto;
+	grid-template-rows: auto auto auto;
 	grid-template-areas:
 		"search-container"
 		"total-results-container"
@@ -10,9 +18,16 @@ main {
 
 .search-container {
 	grid-area: search-container;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr 0.5fr 1fr 0.5fr;
+	column-gap: 0.5rem;
+	grid-template-rows: auto auto auto;
+	row-gap: 0.5rem;
+	grid-template-areas:
+		"label-name label-name label-id label-id"
+		"search-bar search-button search-bar-id search-button-id "
+		"label-select label-select . ."
+		"select-menu select-menu . ."
 }
 
 .total-results {
@@ -29,11 +44,20 @@ main {
 	padding: 2rem;
 }
 
-.search-bar {
-	height: 3rem;
-	width: 50%;
+.label-name {
+	grid-area: label-name;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	border-radius: 0.25rem;
-	margin: 1rem;
+}
+
+.search-bar {
+	grid-area: search-bar;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.25rem;
 }
 
 .search-bar::placeholder {
@@ -41,21 +65,50 @@ main {
 }
 
 .search-button {
-	height: 3rem;
-	width: 20%;
+	grid-area: search-button;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.25rem;
+}
+
+.label-id {
+	grid-area: label-id;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	border-radius: 0.25rem;
 }
 
 .search-bar-id {
-	height: 3rem;
-	width: 50%;
+	grid-area: search-bar-id;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border-radius: 0.25rem;
-	margin: 1rem;
 }
 
 .search-button-id {
-	height: 3rem;
-	width: 20%;
+	grid-area: search-button-id;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.25rem;
+}
+
+.label-select {
+	grid-area: label-select;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 0.25rem;
+}
+
+.select-menu {
+	grid-area: select-menu;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border-radius: 0.25rem;
 }
 
@@ -72,9 +125,7 @@ main {
 		"vipaka vipaka item-vipaka item-vipaka"
 		"increase increase item-increase item-increase"
 		"decrease decrease item-decrease item-decrease"
-		"guna guna item-guna item-guna"
-
-	;
+		"guna guna item-guna item-guna";
 	border: solid 1px;
 	border-radius: 0.25rem;
 	padding: 1rem;
@@ -184,7 +235,6 @@ main {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-
 }
 
 .guna {
@@ -200,5 +250,4 @@ main {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-
 }
