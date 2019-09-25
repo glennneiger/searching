@@ -16,6 +16,7 @@ const condition = document.querySelector("select");
 let itemsList = [];
 
 const searchByType = () => {
+
 	let itemsList = [];
 
 	itemsList = ingredients.filter(item => item.type === condition.value);
@@ -158,17 +159,25 @@ const searchById = function() {
 
 	let searchedItem = parseInt(searchByIdInput.value);
 
-		let isFound = false;
+	let isFound = false;
 
-		let i = -1;
+	let i = -1;
 
-		while (!isFound) {
+	if (searchedItem > 30) {
 
-			i++;
+			itemsList = [];
 
-			if (searchedItem === ingredients[i].id) {
-				itemsList.push(ingredients[i]);
-				isFound = true;
+		} else {
+
+			while (!isFound) {
+
+				i++;
+
+				if (searchedItem === ingredients[i].id) {
+					itemsList.push(ingredients[i]);
+					isFound = true;
+				}
+
 			}
 
 		}
@@ -181,7 +190,6 @@ const searchById = function() {
 
 const searchId = searchById.bind(ingredients);
 const searchType = searchByType.bind(ingredients);
-
 
 searchButton.addEventListener('click', search);
 searchByIdButton.addEventListener('click', searchId);

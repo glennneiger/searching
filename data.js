@@ -10,7 +10,8 @@ let ingredients = [
 		decrease: 'Pitta',
 		guna: 'Rajasic',
 		type: 'fruits'
-	}, {
+	},
+	{
 		id: 2,
 		name: 'Banana',
 		qualities: 'Smooth, Heavy, Laxative',
