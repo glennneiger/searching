@@ -131,7 +131,7 @@ let ingredients = [
 		type: 'grains'
 	},
 	{
-		id: 11,
+		id: 12,
 		name: 'Corn',
 		qualities: 'Light, Dry',
 		rasa: 'Sweet',
@@ -143,7 +143,7 @@ let ingredients = [
 		type: 'grains'
 	},
 	{
-		id: 12,
+		id: 13,
 		name: 'Wheat',
 		qualities: 'Heavy',
 		rasa: 'Sweet',
@@ -155,7 +155,7 @@ let ingredients = [
 		type: 'grains'
 	},
 	{
-		id: 13,
+		id: 14,
 		name: 'Oats (cooked)',
 		qualities: 'Heavy, Oil',
 		rasa: 'Sweet',
@@ -166,18 +166,7 @@ let ingredients = [
 		guna: 'Sattvic',
 		type: 'grains'
 	},
-	{
-		id: 14,
-		name: 'Oats (raw)',
-		qualities: 'Heavy, dry',
-		rasa: 'Sweet',
-		virya: 'Heating',
-		vipaka: 'Sweet',
-		increase: 'Vata and Pitta',
-		decrease: 'Kapha',
-		guna: 'Sattvic',
-		type: 'grains'
-	},
+
 	{
 		id: 15,
 		name: 'Barley',
@@ -287,7 +276,7 @@ let ingredients = [
 		type: 'legumes'
 	},
 	{
-		id: 24,
+		id: 25,
 		name: 'Chickpeas',
 		qualities: 'Dry, Heavy, Rough',
 		rasa: 'Sweet, Astringent',
