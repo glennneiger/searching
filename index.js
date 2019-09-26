@@ -161,29 +161,20 @@ const searchById = function() {
 
 	let isFound = false;
 
-	let i = -1;
+	let i = 0;
 
-	if (searchedItem > 30) {
+	while (i < ingredients.length && !isFound) {
 
-			itemsList = [];
-
-		} else {
-
-			while (!isFound) {
-
-				i++;
-
-				if (searchedItem === ingredients[i].id) {
-					itemsList.push(ingredients[i]);
-					isFound = true;
-				}
-
-			}
-
+		if (searchedItem === ingredients[i].id) {
+			itemsList.push(ingredients[i]);
+			isFound = true;
 		}
 
-		showTotal(itemsList);
-		printItems(itemsList);
+		i++;
+	}
+
+	showTotal(itemsList);
+	printItems(itemsList);
 
 	return itemsList;
 }
