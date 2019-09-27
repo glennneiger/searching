@@ -11,34 +11,32 @@
 	<main>
 		<section class="search-container">
 			<label class="label-name" for="search-id">Type an ingredient</label>
-			<input class="search-bar" type="text" placeholder="Search by name">
-			<button class="search-button">Search!</button>
+			<input class="search-bar"name="search-bar "type="text" placeholder="Search by name">
+			<label for="select-menu" class="label-select">Search by: </label>
+			<select name="select-menu" class="select-menu">
+				<option>-</option>
+				<option value="qualities">qualities</option>
+				<option value="rasa">rasa</option>
+				<option value="virya">virya</option>
+				<option value="vipaka">vipaka</option>
+				<option value="increase">increase</option>
+				<option value="decrease">decrease</option>
+				<option value="guna">guna</option>
+				<option value="type">type</option>
+			</select>
+			<label class="label-condition" for="search-condition">Type a condition</label>
+			<input class="search-condtion" name="search-condtion" type="text" placeholder="hot...sour etc">
+			<button class="search-button">Search</button>
 
 			<label class="label-id" for="search-id">Type a number from 1 to 30</label>
 			<input class="search-bar-id" type="text" name="search-id" placeholder="Search by id">
 			<button class="search-button-id">Search ID</button>
 
-			<label for="select-menu" class="label-select">Search by type: </label>
-			<select name="select-menu" class="select-menu">
-				<option>-</option>
-				<option value="fruits">Fruits</option>
-				<option value="vegetables">Vegetables</option>
-				<option value="grains">Grains</option>
-				<option value="nuts">Nuts</option>
-				<option value="oils">Oils</option>
-			</select>
 		</section>
 
 		<div class="total-results"></div>
 
 		<section class="display-container"></section>
-
-		<section class="display-glossary">
-			<p>Rasa: Taste (sweet, salty, pungent, astringent, bitter and sour) </p><br>
-			<p>Virya: Energy of the substance (cooling or heating)</p><br>
-			<p>Vipaka: Post-Digestive Taste (Sweet and salty rasas have a sweet vipaka; Sour rasa remains sour, and Bitter, pungent, and astringent rasas have a pungent vipaka.) </p><br>
-			<p>Guna: Three qualities influencing all creation: sattva, rajas and tamas. Sattvic quailities imply essence, reality, consciousness, purity, and clarity of perception. All movement and activity are due to rajas. Tamas brings darkness, inertia, heaviness, and materalistic attitudes. There is a constant interplay among these three gunas in all creation. </p>
-		</section>
 
 	</main>
 </body>

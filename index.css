@@ -19,15 +19,15 @@ main {
 .search-container {
 	grid-area: search-container;
 	display: grid;
-	grid-template-columns: 1fr 0.5fr 1fr 0.5fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	column-gap: 0.5rem;
-	grid-template-rows: auto auto auto;
+	grid-template-rows: auto auto auto auto;
 	row-gap: 0.5rem;
 	grid-template-areas:
-		"label-name label-name label-id label-id"
-		"search-bar search-button search-bar-id search-button-id "
-		"label-select label-select . ."
-		"select-menu select-menu . ."
+		"label-name label-select label-condition label-condition"
+		"search-bar select-menu search-condition search-button "
+		"label-id label-id . ."
+		"search-bar-id search-bar-id search-bar-id search-button-id"
 }
 
 .total-results {
@@ -42,6 +42,21 @@ main {
 	grid-area: display-container;
 	display: block;
 	padding: 2rem;
+}
+
+.label-condition {
+	grid-area: label-condition;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.search-condition {
+	grid-area: search-condition;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.25rem;
 }
 
 .label-name {
