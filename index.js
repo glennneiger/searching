@@ -18,14 +18,7 @@ let itemsList = [];
 
 const searchByType = () => {
 
-	let value = condition.value;
-
-	let itemsList =  ingredients.filter(item => {
-
-		if (item[`${value}`].includes(inputFilter.value)) {
-			return true;
-		}
-	});
+	let itemsList =  ingredients.filter(item => item[`${condition.value}`].includes(inputFilter.value) ?  true :  false);
 
 	 showTotal(itemsList);
 	 printItems(itemsList);
