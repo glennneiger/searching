@@ -12,17 +12,23 @@ const displayContainer =  document.querySelector(".display-container");
 const displayTotalResults = document.querySelector(".total-results");
 
 const condition = document.querySelector("select");
+const inputFilter = document.querySelector(".search-condition");
 
 let itemsList = [];
 
 const searchByType = () => {
 
-	let itemsList = [];
+	let value = condition.value;
 
-	itemsList = ingredients.filter(item => item.type === condition.value);
+	let itemsList =  ingredients.filter(item => {
 
-	showTotal(itemsList);
-	printItems(itemsList);
+		if (item[`${value}`].includes(inputFilter.value)) {
+			return true;
+		}
+	});
+
+	 showTotal(itemsList);
+	 printItems(itemsList);
 }
 
 const showTotal = list => {
@@ -182,6 +188,6 @@ const searchById = function() {
 const searchId = searchById.bind(ingredients);
 const searchType = searchByType.bind(ingredients);
 
-searchButton.addEventListener('click', search);
+searchButton.addEventListener('click', searchType);
 searchByIdButton.addEventListener('click', searchId);
-condition.addEventListener('change', searchType);
+//condition.addEventListener('change', searchType);condition.addEventListener('change', searchType);
