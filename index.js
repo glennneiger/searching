@@ -18,7 +18,7 @@ let itemsList = [];
 
 const searchByType = () => {
 
-	let itemsList =  ingredients.filter(item => item[`${condition.value}`].includes(inputFilter.value) ?  true :  false);
+	let itemsList =  ingredients.filter(item => item[`${condition.value}`].startsWith(inputFilter.value) ?  true :  false);
 
 	 showTotal(itemsList);
 	 printItems(itemsList);
@@ -136,7 +136,7 @@ const printItems = list => {
 	})
 }
 
-const search = () => {
+const searchByName = () => {
 
 	itemsList = [];
 
@@ -178,9 +178,18 @@ const searchById = function() {
 	return itemsList;
 }
 
-const searchId = searchById.bind(ingredients);
-const searchType = searchByType.bind(ingredients);
+const search = () => {
 
-searchButton.addEventListener('click', searchType);
+	if (searchInput.value.length !== 0) {
+		console.log('search by name');
+		searchByName();
+	} else {
+		console.log('search by type');
+		searchByType();
+	}
+}
+
+const searchId = searchById.bind(ingredients);
+
+searchButton.addEventListener('click', search);
 searchByIdButton.addEventListener('click', searchId);
-//condition.addEventListener('change', searchType);condition.addEventListener('change', searchType);
