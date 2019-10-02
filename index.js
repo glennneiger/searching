@@ -41,98 +41,97 @@ const printItems = list => {
 
 	list.forEach(item => {
 
-		let itemContainer = document.createElement('div');
-		itemContainer.setAttribute('class', 'item-container');
+		let cardContainer = document.createElement('div');
+		cardContainer.setAttribute('class', 'card');
 
-		let name = document.createElement('div');
-		name.setAttribute('class', 'name');
-		name.innerHTML = 'Name: ';
+		let headerTitle = document.createElement('header');
+		headerTitle.setAttribute('class', 'card-header-title');
 
-		let itemName = document.createElement('div');
-		itemName.setAttribute('class', 'item-name');
-		itemName.innerHTML = item.name;
+		let itemTitle = document.createElement('p');
+		itemTitle.setAttribute('class', 'title');
+		itemTitle.innerHTML = item.name;
 
-		let qualities = document.createElement('div');
-		qualities.setAttribute('class', 'qualities');
+		let cardContent = document.createElement('div');
+		cardContent.setAttribute = ('class', 'card-content');
+
+		let content = document.createElement('div');
+		content.setAttribute('class', 'content');
+
+		let columns = document.createElement('div');
+		columns.setAttribute('class', 'columns is-centered is-mobile');
+
+		let firstColumn = document.createElement('div');
+		firstColumn.setAttribute('class', 'column');
+
+		let type = document.createElement('p');
+		type.innerHTML = 'Type: ';
+
+		let qualities = document.createElement('p');
 		qualities.innerHTML = 'Qualities: ';
 
-		let itemQualities = document.createElement('div');
-		itemQualities.setAttribute('class', 'item-qualities');
-		itemQualities.innerHTML = item.qualities;
-
-		let rasa = document.createElement('div');
-		rasa.setAttribute('class', 'rasa');
+		let rasa = document.createElement('p');
 		rasa.innerHTML = 'Rasa: ';
 
-		let itemRasa = document.createElement('div');
-		itemRasa.setAttribute('class', 'item-rasa');
-		itemRasa.innerHTML = item.rasa;
-
-		let virya = document.createElement('div');
-		virya.setAttribute('class', 'virya');
+		let virya = document.createElement('p');
 		virya.innerHTML = 'Virya: ';
 
-		let itemVirya = document.createElement('div');
-		itemVirya.setAttribute('class', 'item-virya');
-		itemVirya.innerHTML = item.virya;
-
-		let vipaka = document.createElement('div');
-		vipaka.setAttribute('class', 'vipaka');
+		let vipaka = document.createElement('p');
 		vipaka.innerHTML = 'Vipaka: ';
 
-		let itemVipaka = document.createElement('div');
-		itemVipaka.setAttribute('class', 'item-vipaka');
+		let increase = document.createElement('p');
+		increase.innerHTML = 'Increase: ';
+
+		let decrease = document.createElement('p');
+		decrease.innerHTML = 'Decrease: ';
+
+		let secondColumn = document.createElement('div');
+		secondColumn.setAttribute('class', 'column');
+
+		let itemType = document.createElement('p');
+		itemType.innerHTML = item.type;
+
+		let itemQualities = document.createElement('p');
+		itemQualities.innerHTML = item.qualities;
+
+		let itemRasa = document.createElement('p');
+		itemRasa.innerHTML = item.rasa;
+
+		let itemVirya = document.createElement('p');
+		itemVirya.innerHTML = item.virya;
+
+		let itemVipaka = document.createElement('p');
 		itemVipaka.innerHTML = item.vipaka;
 
-		let increase = document.createElement('div');
-		increase.setAttribute('class', 'increase');
-		increase.innerHTML = 'Increases: ';
-
-		let itemIncrease = document.createElement('div');
-		itemIncrease.setAttribute('class', 'item-increase');
+		let itemIncrease = document.createElement('p');
 		itemIncrease.innerHTML = item.increase;
 
-		let decrease = document.createElement('div');
-		decrease.setAttribute('class', 'decrease');
-		decrease.innerHTML = 'Decreases: ';
-
-		let itemDecrease = document.createElement('div');
-		itemDecrease.setAttribute('class', 'item-decrease');
+		let itemDecrease = document.createElement('p');
 		itemDecrease.innerHTML = item.decrease;
 
-		let guna = document.createElement('div');
-		guna.setAttribute('class', 'guna');
-		guna.innerHTML = 'Guna: ';
+		cardContainer.appendChild(headerTitle);
+		headerTitle.appendChild(itemTitle);
+		cardContainer.appendChild(cardContent);
+		cardContent.appendChild(content);
+		content.appendChild(columns);
+		columns.appendChild(firstColumn);
+		firstColumn.appendChild(type);
+		firstColumn.appendChild(qualities);
+		firstColumn.appendChild(rasa);
+		firstColumn.appendChild(virya);
+		firstColumn.appendChild(vipaka);
+		firstColumn.appendChild(increase);
+		firstColumn.appendChild(decrease);
+		columns.appendChild(secondColumn);
+		secondColumn.appendChild(itemType);
+		secondColumn.appendChild(itemQualities);
+		secondColumn.appendChild(itemRasa);
+		secondColumn.appendChild(itemVirya);
+		secondColumn.appendChild(itemVipaka);
+		secondColumn.appendChild(itemIncrease);
+		secondColumn.appendChild(itemDecrease);
 
-		let itemGuna = document.createElement('div');
-		itemGuna.setAttribute('class', 'item-guna');
-		itemGuna.innerHTML = item.guna;
+		displayContainer.appendChild(cardContainer);
 
-		itemContainer.appendChild(name);
-		itemContainer.appendChild(itemName);
-
-		itemContainer.appendChild(qualities);
-		itemContainer.appendChild(itemQualities);
-
-		itemContainer.appendChild(rasa);
-		itemContainer.appendChild(itemRasa);
-
-		itemContainer.appendChild(virya);
-		itemContainer.appendChild(itemVirya);
-
-		itemContainer.appendChild(vipaka);
-		itemContainer.appendChild(itemVipaka);
-
-		itemContainer.appendChild(increase);
-		itemContainer.appendChild(itemIncrease);
-
-		itemContainer.appendChild(decrease);
-		itemContainer.appendChild(itemDecrease);
-
-		itemContainer.appendChild(guna);
-		itemContainer.appendChild(itemGuna);
-
-		displayContainer.appendChild(itemContainer);
 	})
 }
 
