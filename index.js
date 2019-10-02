@@ -181,10 +181,8 @@ const searchById = function() {
 const search = () => {
 
 	if (searchInput.value.length !== 0) {
-		console.log('search by name');
 		searchByName();
 	} else {
-		console.log('search by type');
 		searchByType();
 	}
 }
