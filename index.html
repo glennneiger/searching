@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" />
-	<link rel="stylesheet" href="index.css" />
 	<title>Ayurveda Searcher</title>
 </head>
 <body>
@@ -20,61 +20,119 @@
 			</div>
 		</section>
 
-		<section class="search-container section">
-
+		<section class="section has-background-light">
 			<div class="container">
-				<div class="field">
-					<label class="label-name label " for="search-id">Type an ingredient</label>
-					<div class="control">
-						<input class="search-bar input" name="search-bar "type="text" placeholder="Search by name">
+				<div class="columns is-mobile">
+					<div class="column">
+						<div class="field">
+							<div class="control">
+								<div class="label" for="search-bar">Type an ingredient</div>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+							<div class="field">
+								<div class="control">
+									<div class="label" for="select-menu">Select </div>
+								</div>
+							</div>
+					</div>
+					<div class="column">
+							<div class="field">
+								<div class="control">
+									<div class="label" for="search-condition">Type a condition </div>
+								</div>
+							</div>
+					</div>
+					<div class="column">
+							<div class="field">
+								<div class="control">
+									<div class="label" ></div>
+								</div>
+							</div>
 					</div>
 				</div>
 
-				<div class="field">
-					<label for="select-menu" class=" label-select label">Search by: </label>
-					<div class="control">
-						<select name="select-menu" class="select-menu select">
-							<option>-</option>
-							<option value="qualities">qualities</option>
-							<option value="rasa">rasa</option>
-							<option value="virya">virya</option>
-							<option value="vipaka">vipaka</option>
-							<option value="increase">increase</option>
-							<option value="decrease">decrease</option>
-							<option value="guna">guna</option>
-							<option value="type">type</option>
-						</select>
+				<div class="columns is-mobile">
+					<div class="column">
+						<div class="field">
+							<div class="control">
+								<input class="search-bar input" name="search-bar "type="text" placeholder="apple...">
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="field">
+							<div class="control">
+								<div name="select-menu" class="select-menu select">
+									<select>
+										<option>-</option>
+										<option value="qualities">qualities</option>
+										<option value="rasa">rasa</option>
+										<option value="virya">virya</option>
+										<option value="vipaka">vipaka</option>
+										<option value="increase">increase</option>
+										<option value="decrease">decrease</option>
+										<option value="guna">guna</option>
+										<option value="type">type</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+							<div class="field">
+								<div class="control">
+									<input class="search-condition input" name="search-condition" type="text" placeholder="hot...sour etc">
+								</div>
+							</div>
+					</div>
+					<div class="column">
+						<div class="field">
+							<div class="control">
+								<div class="search-button button">Search</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<div class="field has-addons">
-					<label class="label-condition label" for="search-condition">Type a condition</label>
-					<div class="control">
-						<input class="search-condition input" name="search-condition" type="text" placeholder="hot...sour etc">
+				<div class="columns is-mobile">
+					<div class="column">
+						<div class="field">
+							<div class="control">
+								<div class="label" for="search-bar-id">Search a number 1-30</div>
+							</div>
+						</div>
 					</div>
-					<div class="search-button button">Search</div>
 				</div>
 
-				<div class="field has-addons">
-					<label class=" label-id label" for="search-id">Type a number from 1 to 30</label>
-					<input class="control search-bar-id input" type="text" name="search-id" placeholder="Search by id">
-					<div class="control search-button-id button">Search ID</div>
+				<div class="columns is-mobile">
+					<div class="column">
+						<div class="field">
+							<div class="control">
+								<input class="search-bar-id input" placeholder="A number from 1 to 30">
+							</div>
+						</div>
+					</div>
+					<div class="column">
+							<div class="field">
+								<div class="control">
+									<div class="search-button-id button">Search</div>
+								</div>
+							</div>
+						</div>
 				</div>
 			</div>
-
-			<div class="level">
-					<div class="total-results level-item"></div>
-			</div>
-
 		</section>
 
 		<section class="section">
 			<div class="container">
+				<div class="level">
+						<div class="total-results level-item"></div>
+				</div>
 				<div class="display-container"></div>
 			</div>
 		</section>
-
-
 
 	</main>
 </body>
