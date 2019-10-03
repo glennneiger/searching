@@ -52,7 +52,7 @@ const printItems = list => {
 		itemTitle.innerHTML = item.name;
 
 		let cardContent = document.createElement('div');
-		cardContent.setAttribute = ('class', 'card-content');
+		cardContent.setAttribute('class', 'card-content');
 
 		let content = document.createElement('div');
 		content.setAttribute('class', 'content');
